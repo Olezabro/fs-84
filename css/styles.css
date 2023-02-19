@@ -1,0 +1,81 @@
+/* @font-face {
+    font-family:"open-sans-reg";
+    src: url(../fonts/OpenSans-Regular.ttf);
+ }
+
+@font-face {
+    font-family:"open-sans-bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+ }*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ .list {
+    list-style: none;
+ }
+
+ .link {
+    text-decoration: none;
+ }
+
+.header {
+    background-color: gray;
+}
+
+.header-navigation {
+
+}
+
+.header-logo {
+
+}
+
+.header-item {
+
+}
+
+.header-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;    
+}
+
+.header-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* Hero styles */
+
+.hero {
+}
+.hero-list {
+}
+.hero-item {
+}
+.hero-link {
+}
+.hero-subtitle {
+}
+.hero-title {
+}
+.hero-description {
+}
