@@ -1,22 +1,34 @@
-/* @font-face {
-    font-family:"open-sans-reg";
-    src: url(../fonts/OpenSans-Regular.ttf);
- }
-
-@font-face {
-    font-family:"open-sans-bold";
-    src: url(../fonts/OpenSans-Bold.ttf);
- }*/
 
  :root {
     --main-title-color: #fff;
     --secondary-title-color: #303030;
     --accent-color: #FF6C00;
     --secondary-font: 'Raleway', sans-serif;
+    --basic-margin: 20px;
  }
 
-body {
+ h1, h2, h2, h4, h5, h6, p {
+    margin: 0;
+ }
+
+ ul{
+    margin: 0;
+    padding: 0;
+ }
+
+ body {
     font-family: 'Open Sans', sans-serif;
+ }
+
+ img {
+    display: block;
+ }
+
+ .container {
+    width: 1200px;
+    margin: 0 auto;
+    outline: 1px solid red;
+    padding: 0 15px;
  }
 
  .list {
@@ -70,6 +82,7 @@ body {
 
 .header {
     background-color: gray;
+    padding: 32px 0;
 }
 
 .header-navigation {
@@ -135,6 +148,7 @@ body {
 
 .hero-subtitle {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: var(--basic-margin);
 }
 
 .hero-title {
@@ -143,6 +157,7 @@ body {
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: var(--main-title-color);
+    margin-bottom: var(--basic-margin);
 
 }
 
@@ -151,14 +166,15 @@ body {
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
-
     color: #9DA4BD;
+    width: 360px;
 }
 
 
  /* ----------- qbout styles ----------- */
  
- .about-class {
+ .about {
+    padding: 120px;
 }
 .about-list {
 }
@@ -166,10 +182,12 @@ body {
 }
 .about-subtitle {
     color: var(--secondary-title-color);
+    margin-bottom: var(--basic-margin);
 }
 
 .about-title {
     color: var(--secondary-title-color);
+    margin-bottom: var(--basic-margin);
 }
 
 .about-description {
@@ -178,10 +196,13 @@ body {
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: #555555;
+    margin-bottom: 42px;
 }
 .about-description span {
     font-size: 18px;
     line-height: 1.67;
+    margin-bottom: var(--basic-margin);
+    display: block;
 }
 
 .about-btn {
@@ -192,20 +213,29 @@ body {
 /* ----------- prices styles ----------- */
 
 .prices {
-    background: gray;
+    padding: 120px 0;
 }
 
 .prices-subtitle {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: var(--basic-margin);
 }
 
 .prices-title {
     color: var(--main-title-color);
+    margin-bottom: 44px;
 }
 .prices-list {
+    border: 1px solid green;
+    padding: 30px 20px;
 }
 
 .prices-item {
+    margin-bottom: 20px;
+}
+
+.prices-item:not(:last-child) {
+    margin-bottom: var(--basic-margin);
 }
 
 .prices-item-text {
