@@ -33,6 +33,7 @@
 
  .list {
     list-style: none;
+    text-decoration: none;
  }
 
  .link {
@@ -85,12 +86,23 @@
     padding: 32px 0;
 }
 
-.header-navigation {
+.header-container {
+    display: flex;
+    align-items: center;
+}
 
+.header-navigation {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
+    margin-right: 131px;
+}
 
+.header-list {
+    display: flex;
+    gap: 30px;
 }
 
 .header-item {
@@ -117,10 +129,17 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;    
+    margin-left: auto;
+    margin-right: 43px;
 }
 
 .header-btn {
     color: #FFFFFF;
+    background-color: transparent;
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    min-width: 160px;
 }
 
 
