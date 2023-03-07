@@ -48,6 +48,13 @@
     letter-spacing: 0.09em;
     text-transform: uppercase;
     cursor: pointer;
+
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    min-width: 160px;
 }
 
 .title {
@@ -146,9 +153,19 @@
  /* ----------- hero styles ----------- */
 
 .hero {
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-content {
+    padding: 272px 100px 208px;
     background: gray;
+    flex-grow: 1;
 }
 .hero-list {
+    width: 100px;
 }
 .hero-item {
 }
@@ -157,7 +174,7 @@
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.2em;
-    color: #FFFFFF;
+    color: #303030;
 }
 
 .hero-link:hover,
@@ -190,14 +207,32 @@
 }
 
 
- /* ----------- qbout styles ----------- */
+
+
+
+ /* ----------- about styles ----------- */
  
  .about {
     padding: 120px;
 }
+
+.about-container{
+    display: flex;
+}
+
+.about-content {
+    max-width: 470px;
+    width: 50%;
+}
+
 .about-list {
+    display: flex;
+    gap: 30px;
+    margin-right: 30px;
+    width: 50%;
 }
 .about-item {
+    width: calc((100% - 30px) / 2);
 }
 .about-subtitle {
     color: var(--secondary-title-color);
@@ -233,6 +268,17 @@
 
 .prices {
     padding: 120px 0;
+    background: gray;
+}
+
+.prices-container {
+
+}
+
+.prices-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
 }
 
 .prices-subtitle {
@@ -247,10 +293,12 @@
 .prices-list {
     border: 1px solid green;
     padding: 30px 20px;
+    flex-grow: 1;
 }
 
 .prices-item {
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .prices-item:not(:last-child) {
@@ -267,6 +315,8 @@
 
 .prices-btn {
     color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -320,14 +370,23 @@
 }
 .barbers-subtitle {
     color: var(--secondary-title-color);
+    margin-bottom: var(--basic-margin);
 }
 .barbers-title {
+    margin-bottom: 44px;
+}
+
+.barbers-content {
+    padding: 30px;
 }
 
 .barbers-list {
+    display: flex;
+    gap: 30px;
 }
 
 .barbers-item {
+    width: calc((100% - 60px) / 3);
 }
 .barbers-item-title {
     font-weight: 400;
@@ -336,6 +395,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--secondary-title-color);
+    margin-bottom: 8px;
 }
 
 .barbers-item-text {
@@ -351,16 +411,23 @@
 /* ----------- gallery styles ----------- */
 
 .gallery {
+    padding: 120px 0;
 }
 
 .gallery-subtitle {
     color: var(--secondary-title-color);
+    margin-bottom: 44px;
 }
 
 .gallery-list {
+    display: flex;
+    gap: 30px;
 }
 
 .gallery-item {
+    width: calc((100% - 90px) / 4);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
